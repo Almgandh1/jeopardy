@@ -16,30 +16,125 @@ const MainCard = () => {
     <>
     <Grid container spacing={4}>
 
-      <Grid item xs={6}>
-        <Item elevation={3}>One</Item>
+      <Grid item xs={2}>
+        <Item elevation={3}>200$</Item>
       </Grid>
 
-      <Grid item xs={6}>
-        <Item elevation={3}>Two</Item>
+      <Grid item xs={2}>
+        <Item elevation={3}>200$</Item>
       </Grid>
 
-      <Grid item xs={6}>
-        <Item elevation={3}>Three</Item>
+      <Grid item xs={2}>
+        <Item elevation={3}>200$</Item>
       </Grid>
 
-      <Grid item xs={6}>
-        <Item elevation={3}>Four</Item>
+      <Grid item xs={2}>
+        <Item elevation={3}>200$</Item>
       </Grid>
 
-      <Grid item xs={6}>
-        <Item elevation={3}>Five</Item>
+      <Grid item xs={2}>
+        <Item elevation={3}>200$</Item>
       </Grid>
 
-      <Grid item xs={6}>
-        <Item elevation={3}>Six</Item>
+      <Grid item xs={2}>
+        <Item elevation={3}>200$</Item>
       </Grid>
 
+      <Grid item xs={2}>
+        <Item elevation={3}>400$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>400$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>400$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>400$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>400$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>400$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>600$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>600$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>600$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>600$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>600$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>600$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>800$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>800$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>800$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>800$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>800$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>800$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>1000$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>1000$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>1000$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>1000$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>1000$</Item>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Item elevation={3}>1000$</Item>
+      </Grid>
     </Grid>
   </>
 )
