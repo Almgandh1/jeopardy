@@ -7,12 +7,17 @@ const MainPage = () => {
   return (
       <Box>
         <MainCard />
-          <Box style={{ display: 'flex', flexDirection: 'row' }}>
-              
+        <Box style={{ display: 'flex', flexDirection: 'row' }}>
+          <div style={{ marginRight: '10px' }}>
             <UserCard title="John Doe" score={100} />
+          </div>
+          <div style={{ marginLeft: '10px', marginRight: '10px' }}>
             <UserCard title="Dohn Joe" score={100} />
+          </div>
+          <div style={{ marginLeft: '10px' }}>
             <UserCard title="Jllaosdjdfj" score={100} />
-          </Box>
+          </div>
+        </Box>
 
       </Box>
   )
