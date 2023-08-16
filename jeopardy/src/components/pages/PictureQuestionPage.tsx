@@ -1,9 +1,9 @@
 import React from 'react'
 
-const QuestionPage = () => {
+const PictureQuestionPage = () => {
   return (
     <div>QuestionPage</div>
   )
 }
 
-export default QuestionPage
+export default PictureQuestionPage
