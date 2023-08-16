@@ -10,6 +10,12 @@ const MainCard = () => {
         padding: 8,
         textAlign: 'center',
         color: 'black',
+        height: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        display: 'flex',
+        fontWeight: '600',
       }));
 
   return (
