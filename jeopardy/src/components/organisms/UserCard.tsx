@@ -10,16 +10,55 @@ type UserCardProps = {
 
 
 const UserCard = ({ title, score, setScore }: UserCardProps) => {
-    return (
-      <>
-      <Paper>
-        <h1>{title}</h1>
-        <p>Score: {score}</p>
-      </Paper>
-      <Button variant='contained' onClick={() => {setScore(score + 200)}}>Add Points</Button>
-      <Button variant='contained' onClick={() => {setScore(score - 200)}}>Remove Points</Button>
-      </>
-    );
+  const cardStyle = {
+    width: '400px', // Adjust the width as desired
+    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column' as 'column', // Explicitly set the type
+    alignItems: 'center',
   };
+
+  const paperStyle={
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center', // Center vertically
+    padding: '20px',
+
+  }
+
+  const titleStyle = {
+    fontSize: '1.5rem', // You can adjust the font size here
+    marginBottom: '10px',
+  };
+
+  const scoreStyle = {
+    fontSize: '1.5rem', // Match the font size with the title
+  };
+
+  const buttonsContainerStyle = {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '10px',
+  };
+
+  return (
+    <div style={cardStyle}>
+      <Paper elevation={2} style={paperStyle}>
+        <h1 style={titleStyle}>{title}</h1>
+        <div style={buttonsContainerStyle}>
+          <Button variant="outlined" onClick={() => setScore(score + 200)}>
+            +
+          </Button>
+          <Button variant="outlined" onClick={() => setScore(score - 200)}>
+            -
+          </Button>
+        </div>
+        <p style={scoreStyle}>Score: {score}</p>
+      </Paper>
+    </div>
+  );
+};
 
 export default UserCard
