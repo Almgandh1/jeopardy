@@ -13,10 +13,6 @@ const Title: SxProps = {
 }
 
 const Card: SxProps = {
-    backgroundColor: '#0D880D',
-    ":hover": {
-        backgroundColor: '#004B00'
-    },
     color: "black",
     padding: 8,
     textAlign: 'center',

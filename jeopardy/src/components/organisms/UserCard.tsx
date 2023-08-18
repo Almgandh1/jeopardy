@@ -16,7 +16,7 @@ const UserCard = ({ title, score, setScore }: UserCardProps) => {
         <h1>{title}</h1>
         <p>Score: {score}</p>
       </Paper>
-      <Button variant='contained' onClick={() => {setScore(score + 200)}}>Add Points</Button>
+      <Button variant='contained' onClick={() => {setScore(score + 200)}} sx={{mr: 2}}>Add Points</Button>
       <Button variant='contained' onClick={() => {setScore(score - 200)}}>Remove Points</Button>
       </>
     );
