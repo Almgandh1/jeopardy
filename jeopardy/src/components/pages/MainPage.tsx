@@ -1,28 +1,19 @@
-import { Box,} from '@mui/material'
-import MainCard from "../organisms/MainCard"
-import React, { useState } from 'react'
-import UserCard from '../organisms/UserCard'
+import { Box, Typography,} from '@mui/material'
+import MainCard from "../organisms/Board"
+import React from 'react'
+import Footer from '../organisms/UserScores'
 
-const MainPage = () => {
-  const [kunfiScore, setKunfiScore] = useState(0)
-  const [mircoScore, setMircoScore] = useState(0)
-  const [alecScore, setAlecScore] = useState(0)
+type MainPageProps = {
+  title: string;
+}
+
+const MainPage = ({ title }: MainPageProps) => {
 
   return (
-      <Box>
+      <Box sx={{margin: "20px"}}>
+        <Typography variant='h1' sx={{textAlign: "center", marginBottom:"20px"}}>{title}</Typography>
         <MainCard />
-        <Box style={{ display: 'flex', flexDirection: 'row' }}>
-          <div style={{ marginRight: '10px' }}>
-            <UserCard title="Alec" score={alecScore} setScore={setAlecScore}/>
-          </div>
-          <div style={{ marginLeft: '10px', marginRight: '10px' }}>
-            <UserCard title="Kunfi" score={kunfiScore} setScore={setKunfiScore}/>
-          </div>
-          <div style={{ marginLeft: '10px' }}>
-            <UserCard title="Mirco" score={mircoScore} setScore={setMircoScore}/>
-          </div>
-        </Box>
-
+        <Footer />
       </Box>
   )
 }

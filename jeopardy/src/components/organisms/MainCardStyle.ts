@@ -13,7 +13,7 @@ const Title: SxProps = {
 }
 
 const Card: SxProps = {
-    color: "black",
+    backgroundColor: 'red',
     padding: 8,
     textAlign: 'center',
     height: 10,
@@ -24,4 +24,5 @@ const Card: SxProps = {
     fontWeight: 'bold',
 }
 
+// eslint-disable-next-line
 export default { Title, Card };
