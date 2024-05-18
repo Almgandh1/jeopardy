@@ -1,6 +1,6 @@
 import React from 'react'
 import Paper from '@mui/material/Paper';
-import { Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 type UserCardProps = {
   title: string;
@@ -12,12 +12,14 @@ type UserCardProps = {
 const UserCard = ({ title, score, setScore }: UserCardProps) => {
     return (
       <>
-      <Paper>
-        <h1>{title}</h1>
-        <p>Score: {score}</p>
+      <Paper sx={{mb: "10px"}}>
+        <Typography variant='h3' sx={{ml:"10px", pt: "10px"}}>{title}</Typography>
+        <Typography variant='h5' sx={{ml:"10px", pb: "10px"}}>Score: {score}</Typography>
       </Paper>
-      <Button variant='contained' onClick={() => {setScore(score + 200)}} sx={{mr: 2}}>Add Points</Button>
-      <Button variant='contained' onClick={() => {setScore(score - 200)}}>Remove Points</Button>
+      <Box sx={{ display: 'flex', padding: "0px" }}>
+        <Button variant='contained' onClick={() => {setScore(score + 100)}} sx={{width: "50%", mr: "5px", backgroundColor: "darkgreen"}} style={{ fontSize: '20px' }}>+</Button>
+        <Button variant='contained' onClick={() => {setScore(score - 100)}} sx={{width: "50%", ml: "5px", backgroundColor: "darkred"}} style={{ fontSize: '20px' }}>-</Button>
+      </Box>
       </>
     );
   };

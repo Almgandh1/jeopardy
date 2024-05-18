@@ -15,7 +15,7 @@ const Board = () => {
 
   return (
     <>
-    <Grid container spacing={4}>
+    <Grid container spacing={2}>
       {
         currentCategories.map(category => (
           <Grid item xs={2}>
@@ -26,7 +26,7 @@ const Board = () => {
       {
         currentDialogContent.map(content => (
           <Grid item xs={2}>
-            <MoneyCard amount={content.points} question={content.question}/>
+            <MoneyCard amount={content.points} question={content.question} image={content.image} audio={content.audio}/>
           </Grid>  
         ))
       }  

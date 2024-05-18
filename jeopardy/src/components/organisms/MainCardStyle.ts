@@ -1,8 +1,9 @@
 import { SxProps } from "@mui/system";
 
 const Title: SxProps = {
-    backgroundColor: '#41B741',
-    padding: 8,
+    backgroundColor: 'darkblue',
+    pt: 8,
+    pb: 8,
     textAlign: 'center',
     height: 10,
     justifyContent: 'center',
@@ -10,11 +11,12 @@ const Title: SxProps = {
     fontSize: 40,
     display: 'flex',
     fontWeight: 'bold',
+    color: "white"
 }
 
 const Card: SxProps = {
-    backgroundColor: 'red',
-    padding: 8,
+    pt: 8,
+    pb: 8,
     textAlign: 'center',
     height: 10,
     justifyContent: 'center',

@@ -7,23 +7,27 @@ import QuestionDialog from './QuestionDialog';
 type MoneyCardProps = {
     amount: number;
     question: string;
+    image: any;
+    audio: any;
 }
 
-const MoneyCard = ({ amount, question }: MoneyCardProps) => {
+const MoneyCard = ({ amount, question, image, audio}: MoneyCardProps) => {
     const [openDialog, setOpenDialog] = useState<boolean>(false);
+    const [status, setStatus] = useState<Boolean>(true);
 
     const handleClose = () => {
+        setStatus(false);
         setOpenDialog(false);
-      };
+    };
 
     return (
         <>
             <Card>
-                <CardActionArea onClick={() => {setOpenDialog(true)}}>
-                    <Typography sx={MainCardStyle.Card}>{ amount }</Typography>
+                <CardActionArea onClick={() => {setOpenDialog(true)}} disabled={!status}>
+                    <Typography sx={{...MainCardStyle.Card, ...(!status ? {backgroundColor: 'red'} : {backgroundColor: 'green'}),}}>{ amount }</Typography>
                 </CardActionArea>
             </Card>
-            <QuestionDialog handleClose={handleClose} open={openDialog} question={question}/>
+            <QuestionDialog handleClose={handleClose} open={openDialog} question={question} image={image} audio={audio}/>
         </>
     );
   };

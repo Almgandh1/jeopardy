@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Card, Typography } from '@mui/material';
 import React from 'react'
 import MainCardStyle from './MainCardStyle';
 
@@ -9,7 +9,9 @@ type CategoryCardProps = {
 
 const CategoryCard = ({ categoryName }: CategoryCardProps) => {
     return (
-      <Typography sx={MainCardStyle.Title}>{ categoryName }</Typography>
+      <Card>
+        <Typography sx={MainCardStyle.Title}>{ categoryName }</Typography>
+      </Card>
     );
   };
 

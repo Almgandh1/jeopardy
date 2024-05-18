@@ -5,11 +5,11 @@ type QuestionDialogProps = {
     open: boolean;
     handleClose: Function;
     question: string;
-    image?: string;
-    video?: string;
+    image?: any;
+    audio?: any;
 }
 
-const QuestionDialog = ({handleClose, open, question, image, video} : QuestionDialogProps) => {
+const QuestionDialog = ({handleClose, open, question, image, audio} : QuestionDialogProps) => {
 
   return (
     <Dialog onClose={() => {handleClose();}} open={open}
@@ -23,11 +23,11 @@ const QuestionDialog = ({handleClose, open, question, image, video} : QuestionDi
           },
         },
       }}>
-        <DialogContent>
+        <DialogContent sx={{display: "flex", flexDirection: "column"}}>
             <Typography variant='h3'>{question}</Typography>
+        {image && <img src={require("../data/images" + image)} alt='banana' style={{marginTop: "20px", maxWidth: "1000px"}}></img>}
+        {audio && <audio controls style={{marginTop: "20px"}}><source src={require("../data/audio" + audio)} type="audio/mpeg"></source></audio>}
         </DialogContent>
-        {image && <img src={image} alt='banana'></img>}
-        {video && <video src={video} width="1000" height="750" controls></video>}
     </Dialog>
   )
 }
