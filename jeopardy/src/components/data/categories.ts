@@ -5,14 +5,14 @@ export const categories = {
         "Random",
         "Filmmusik",
         "Brand",
-        "Lolmypia"
+        "Lolympia"
     ],
     secondCategories: [
         "Kantönligeist",
         "Schätzen",
         "Random",
-        "Guess The Song",
+        "SongGuessr",
         "Boozen",
-        "Fuessblal"
+        "Fuessball"
     ]
 } 

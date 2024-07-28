@@ -23,10 +23,10 @@ const QuestionDialog = ({handleClose, open, question, image, audio} : QuestionDi
           },
         },
       }}>
-        <DialogContent sx={{display: "flex", flexDirection: "column"}}>
-            <Typography variant='h3'>{question}</Typography>
-        {image && <img src={require("../data/images" + image)} alt='banana' style={{marginTop: "20px", maxWidth: "1000px", maxHeight:"750px", objectFit: "contain"}}></img>}
-        {audio && <audio controls style={{marginTop: "20px"}}><source src={require("../data/audio" + audio)} type="audio/mpeg"></source></audio>}
+        <DialogContent sx={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
+          <Typography variant='h3' sx={{justifyItems: "center", alignSelf: "center"}}>{question}</Typography>
+          {image && <img src={require("../data/images" + image)} alt='banana' style={{marginTop: "20px", width: "1000px", height:"750px", objectFit: "contain", flex: 1, alignSelf: "center"}}></img>}
+          {audio && <audio controls style={{marginTop: "20px", alignSelf: "center"}}><source src={require("../data/audio" + audio)} type="audio/mpeg"></source></audio>}
         </DialogContent>
     </Dialog>
   )

@@ -13,9 +13,9 @@ const Router = () => {
   
   return (
     <Routes>
-        <Route path={"/round-one"} element={<PageOne title={"Round One"} cyrillScore={cyrillScore} setCyrillScore={setCyrillScore} tashiScore={tashiScore} setTashiScore={setTashiScore} 
+        <Route path={"/round-one"} element={<PageOne title={"1. Rundi"} cyrillScore={cyrillScore} setCyrillScore={setCyrillScore} tashiScore={tashiScore} setTashiScore={setTashiScore} 
         timosScore={timosScore} setTimosScore={setTimosScore} ronScore={ronScore} setRonScore={setRonScore} nevioScore={nevioScore} setNevioScore={setNevioScore} />}/>
-        <Route path={"/round-two"} element={<PageTwo title={"Round Two"} cyrillScore={cyrillScore} setCyrillScore={setCyrillScore} tashiScore={tashiScore} setTashiScore={setTashiScore} 
+        <Route path={"/round-two"} element={<PageTwo title={"2.d Rundi"} cyrillScore={cyrillScore} setCyrillScore={setCyrillScore} tashiScore={tashiScore} setTashiScore={setTashiScore} 
         timosScore={timosScore} setTimosScore={setTimosScore} ronScore={ronScore} setRonScore={setRonScore} nevioScore={nevioScore} setNevioScore={setNevioScore} />}/>
         <Route path={"/scores"} element={<FinalScores cyrillScore={cyrillScore} tashiScore={tashiScore} timosScore={timosScore} ronScore={ronScore} nevioScore={nevioScore}/>}/>
     </Routes>
