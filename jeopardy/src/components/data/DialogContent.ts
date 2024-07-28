@@ -1,7 +1,7 @@
 export const dialogContent = {
     firstRoundContent : [
         {points: 200, question: "Kairo \n Alexandria \n Gizeh", image: "", audio: ""},
-        {points: 200, question: "Einwohner Stadt Zürich (2024)", image: "", audio: "/never.mp3"},
+        {points: 200, question: "Einwohner Stadt Zürich (2024)", image: "", audio: ""},
         {points: 200, question: "Welche Tramnummer fährt Klusplatz - Hardturm?", image: "", audio: ""},
         {points: 200, question: "Aus welchem Film Stammt die folgende Musik?", image: "", audio: "/f200.mp3"},
         {points: 200, question: "Nenne die Marke", image: "/b200.png", audio: ""},
