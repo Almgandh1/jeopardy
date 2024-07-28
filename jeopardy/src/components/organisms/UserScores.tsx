@@ -4,10 +4,10 @@ import UserCard from './UserCard'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 type UserScoresProps = {
-  alecScore: number;
-  setAlecScore: React.Dispatch<React.SetStateAction<number>>;
-  kunfiScore: number;
-  setKunfiScore: React.Dispatch<React.SetStateAction<number>>;
+  cyrillScore: number;
+  setCyrillScore: React.Dispatch<React.SetStateAction<number>>;
+  tashiScore: number;
+  setTashiScore: React.Dispatch<React.SetStateAction<number>>;
   timosScore: number;
   setTimosScore: React.Dispatch<React.SetStateAction<number>>;
   ronScore: number;
@@ -16,7 +16,7 @@ type UserScoresProps = {
   setNevioScore: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const UserScores = ({alecScore, setAlecScore, kunfiScore, setKunfiScore, timosScore, setTimosScore, ronScore, setRonScore, nevioScore, setNevioScore}: UserScoresProps) => {
+const UserScores = ({cyrillScore, setCyrillScore, tashiScore, setTashiScore, timosScore, setTimosScore, ronScore, setRonScore, nevioScore, setNevioScore}: UserScoresProps) => {
 
     const navigate = useNavigate();
     let location = useLocation();
@@ -30,10 +30,10 @@ const UserScores = ({alecScore, setAlecScore, kunfiScore, setKunfiScore, timosSc
   return (
     <Grid container style={{ display: 'flex', flexDirection: 'row' }} spacing={2}>
           <Grid item xs={2}>
-            <UserCard title="Alec" score={alecScore} setScore={setAlecScore}/>
+            <UserCard title="Cyrill" score={cyrillScore} setScore={setCyrillScore}/>
           </Grid>
           <Grid item xs={2}>
-            <UserCard title="Kunfi" score={kunfiScore} setScore={setKunfiScore}/>
+            <UserCard title="Tashi" score={tashiScore} setScore={setTashiScore}/>
           </Grid>
           <Grid item xs={2}>
             <UserCard title="Timos" score={timosScore} setScore={setTimosScore}/>

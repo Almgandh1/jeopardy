@@ -2,7 +2,7 @@ export const dialogContent = {
     firstRoundContent : [
         {points: 200, question: "Meme?", image: "/peepo.png", audio: ""},
         {points: 200, question: "singer?", image: "", audio: "/never.mp3"},
-        {points: 200, question: "question number 3", image: "", audio: ""},
+        {points: 200, question: "question number 3", image: "/test.jpg", audio: ""},
         {points: 200, question: "question number 4", image: "", audio: ""},
         {points: 200, question: "question number 5", image: "", audio: ""},
         {points: 200, question: "question number 6", image: "", audio: ""},
