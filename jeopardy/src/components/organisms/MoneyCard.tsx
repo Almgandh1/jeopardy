@@ -3,31 +3,31 @@ import React, { useState } from 'react'
 import MainCardStyle from './MainCardStyle';
 import QuestionDialog from './QuestionDialog';
 
-
 type MoneyCardProps = {
     amount: number;
     question: string;
+    answer: string;
+    answerImage: any;
     image: any;
     audio: any;
 }
 
-const MoneyCard = ({ amount, question, image, audio}: MoneyCardProps) => {
-    const [openDialog, setOpenDialog] = useState<boolean>(false);
+const MoneyCard = ({ amount, question, answer, image, answerImage, audio}: MoneyCardProps) => {
+    const [openQuestionDialog, setOpenQuestionDialog] = useState<boolean>(false);
     const [status, setStatus] = useState<Boolean>(true);
 
-    const handleClose = () => {
-        setStatus(false);
-        setOpenDialog(false);
+    const handleQuestionClose = () => {
+        setOpenQuestionDialog(false);
     };
 
     return (
         <>
             <Card>
-                <CardActionArea onClick={() => {setOpenDialog(true)}} disabled={!status}>
+                <CardActionArea onClick={() => {setOpenQuestionDialog(true)}}>
                     <Typography sx={{...MainCardStyle.Card, ...(!status ? {backgroundColor: 'red'} : {backgroundColor: 'green'}),}}>{ amount }</Typography>
                 </CardActionArea>
             </Card>
-            <QuestionDialog handleClose={handleClose} open={openDialog} question={question} image={image} audio={audio}/>
+            <QuestionDialog handleClose={handleQuestionClose} open={openQuestionDialog} question={question} image={image} audio={audio} setStatus={setStatus} answer={answer} answerImage={answerImage}/>
         </>
     );
   };

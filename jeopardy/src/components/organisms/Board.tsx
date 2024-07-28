@@ -26,7 +26,7 @@ const Board = () => {
       {
         currentDialogContent.map(content => (
           <Grid item xs={2}>
-            <MoneyCard amount={content.points} question={content.question} image={content.image} audio={content.audio}/>
+            <MoneyCard amount={content.points} question={content.question} answer={content.answer} image={content.image} answerImage={content.answerImage} audio={content.audio}/>
           </Grid>  
         ))
       }  
