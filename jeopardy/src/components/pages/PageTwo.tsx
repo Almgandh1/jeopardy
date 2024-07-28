@@ -5,10 +5,10 @@ import UserScores from '../organisms/UserScores'
 
 type PageTwoProps = {
   title: string;
-  alecScore: number;
-  setAlecScore: React.Dispatch<React.SetStateAction<number>>;
-  kunfiScore: number;
-  setKunfiScore: React.Dispatch<React.SetStateAction<number>>;
+  cyrillScore: number;
+  setCyrillScore: React.Dispatch<React.SetStateAction<number>>;
+  tashiScore: number;
+  setTashiScore: React.Dispatch<React.SetStateAction<number>>;
   timosScore: number;
   setTimosScore: React.Dispatch<React.SetStateAction<number>>;
   ronScore: number;
@@ -17,7 +17,7 @@ type PageTwoProps = {
   setNevioScore: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const PageTwo = ({ title, alecScore, setAlecScore, kunfiScore, setKunfiScore, timosScore, setTimosScore, ronScore, setRonScore, nevioScore, setNevioScore }: PageTwoProps) => {
+const PageTwo = ({ title, cyrillScore, setCyrillScore, tashiScore, setTashiScore, timosScore, setTimosScore, ronScore, setRonScore, nevioScore, setNevioScore }: PageTwoProps) => {
 
   return (
       <Grid container sx={{ display: 'flex' }}>
@@ -28,7 +28,7 @@ const PageTwo = ({ title, alecScore, setAlecScore, kunfiScore, setKunfiScore, ti
           <MainCard />
         </Grid>
         <Grid item sx={{margin: "20px", flex: 1}}>
-        <UserScores alecScore={alecScore} setAlecScore={setAlecScore} kunfiScore={kunfiScore} setKunfiScore={setKunfiScore} 
+        <UserScores cyrillScore={cyrillScore} setCyrillScore={setCyrillScore} tashiScore={tashiScore} setTashiScore={setTashiScore} 
           timosScore={timosScore} setTimosScore={setTimosScore} ronScore={ronScore} setRonScore={setRonScore} nevioScore={nevioScore} setNevioScore={setNevioScore}/>
         </Grid>
       </Grid>

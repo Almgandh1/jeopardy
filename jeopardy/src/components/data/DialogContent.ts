@@ -64,6 +64,3 @@ export const dialogContent = {
         {points: 1000, question: "Wie lang ist das Camp Nou?", image: "", audio: ""},
     ]
 }  
-
-
-

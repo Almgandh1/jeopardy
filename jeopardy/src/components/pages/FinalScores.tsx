@@ -3,18 +3,18 @@ import React from 'react'
 import FinalScoresStyle from './FinalScoresStyle';
 
 type FinalScoresProps = {
-    alecScore: number;
-    kunfiScore: number;
+    cyrillScore: number;
+    tashiScore: number;
     timosScore: number;
     ronScore: number;
     nevioScore: number;
   }
 
-const FinalScores = ({ alecScore, kunfiScore, timosScore, ronScore, nevioScore}: FinalScoresProps) => {
+const FinalScores = ({ cyrillScore, tashiScore, timosScore, ronScore, nevioScore}: FinalScoresProps) => {
 
     const finalScores = [
-        {score: alecScore, name: "Alec",}, 
-        {score: kunfiScore, name: "Kunfi"}, 
+        {score: cyrillScore, name: "Cyrill",}, 
+        {score: tashiScore, name: "Tashi"}, 
         {score: timosScore, name: "Timos"}, 
         {score: ronScore, name: "Ron"}, 
         {score: nevioScore, name: "Nevio"}
